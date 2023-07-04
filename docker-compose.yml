@@ -86,11 +86,11 @@ services:
     profiles: ["qbt", "stack-2"]
     image: linuxserver/qbittorrent:4.5.2
     # Comment this if vpn is disabled
-    depends_on:
-      - vpn
+    # depends_on:
+      # - vpn
     networks:
       - mynetwork
-    network_mode: service:vpn # Comment this line if vpn is disabled
+    # network_mode: service:vpn # Comment this line if vpn is disabled
     environment:
       - PUID=1000
       - PGID=1000
